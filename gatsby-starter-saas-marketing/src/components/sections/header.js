@@ -43,7 +43,7 @@ const Header = () => {
             <FormSubtitle>
               Already pre-registered?{" "} <br/>
               Thank you, we'll notify you once service is ready.
-              {/* <FormSubtitleLink to="/"></FormSubtitleLink> */}
+              <FormSubtitleLink to="/"></FormSubtitleLink>
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
