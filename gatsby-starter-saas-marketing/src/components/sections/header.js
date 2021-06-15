@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "../global"
+import Img from "gatsby-image"
+import React from "react"
+import styled from "styled-components"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -27,23 +27,23 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>Build Healthy Habit</Subtitle>
             <h1>
-              All your money,
+              Create, Join and
               <br />
-              one account
+              Win Prizes with Champ
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
-              get early access.
+            Champ is a social app designed to help people reach goals and change their habits for the better. Anyone can be a champion of their well-being with Champ.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
+              <HeaderButton>Pre Sign-up</HeaderButton>
             </HeaderForm>
             <FormSubtitle>
-              Already have a beta account?{" "}
-              <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
+              Already pre-registered?{" "} <br/>
+              Thank you, we'll notify you once service is ready.
+              {/* <FormSubtitleLink to="/"></FormSubtitleLink> */}
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>

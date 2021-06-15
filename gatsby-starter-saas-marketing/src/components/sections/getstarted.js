@@ -1,14 +1,14 @@
+import { Container, Section } from "../global"
+
 import React from "react"
 import styled from "styled-components"
-
-import { Container, Section } from "../global"
 
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
-      <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
+      <GetStartedTitle>Be the first to join our beta service</GetStartedTitle>
       <TryItButton>Get early access</TryItButton>
-      <Subtitle>No credit card required.</Subtitle>
+      <Subtitle>Beta version is invitation only</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )

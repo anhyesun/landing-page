@@ -1,12 +1,11 @@
+import { Container } from "../global"
 import React from "react"
 import styled from "styled-components"
-
-import { Container } from "../global"
 
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
-      <FooterColumn>
+      {/* <FooterColumn>
         <span>Features</span>
         <ul>
           <li>Automation</li>
@@ -26,17 +25,17 @@ const Footer = () => (
           <li>About Us</li>
           <li>Careers</li>
         </ul>
-      </FooterColumn>
+      </FooterColumn> */}
       <FooterColumn>
         <span>Social</span>
         <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li> <a href="https://www.linkedin.com/company/champ-app/">LinkedIn</a> </li>
+          <li> <a href="https://www.instagram.com/thechampapp/">Instagram</a> </li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>Champ</Logo>
     </BrandContainer>
   </FooterWrapper>
 )
@@ -97,6 +96,13 @@ const FooterColumn = styled.div`
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
       font-size: 15px;
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+        color: #000;
+      }
     }
   }
 `
